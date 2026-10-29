@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact SoftFlow</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      padding: 25px;
+    }
+    .contact-card {
+      width: min(100%, 540px);
+      padding: 38px;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      text-align: center;
+    }
+    .contact-card h1 { color: var(--text); }
+    .contact-card p {
+      color: var(--muted);
+      line-height: 1.7;
+    }
+    .email-address {
+      display: block;
+      padding: 16px;
+      margin: 25px 0;
+      background: var(--hover);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      color: var(--primary-light);
+      overflow-wrap: anywhere;
+    }
+    .contact-actions {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+  </style>
+</head>
+<body>
+  <main class="contact-card">
+    <div class="eyebrow">SOFTFLOW SUPPORT</div>
+    <h1>Let's get in touch.</h1>
+    <p>Have a question, feedback or need help with SoftFlow? Reach our support team using the email address below.</p>
+
+    <span class="email-address" id="support-email">softcloud079@gmail.com</span>
+
+    <div class="contact-actions">
+      <button class="button primary" id="copy-email">Copy email address</button>
+      <a class="button secondary" href="index.html">Back to SoftFlow</a>
+    </div>
+    <p id="copy-status" role="status" aria-live="polite"></p>
+  </main>
+
+  <script>
+    document.getElementById("copy-email").addEventListener("click", async function () {
+      const email = "softcloud079@gmail.com";
+      const status = document.getElementById("copy-status");
+
+      try {
+        await navigator.clipboard.writeText(email);
+        status.textContent = "Email address copied.";
+      } catch {
+        status.textContent = "Please select and copy the email address above.";
+      }
+    });
+  </script>
+</body>
+</html>
