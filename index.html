@@ -78,12 +78,12 @@
         <p>Bring the everyday parts of productivity into one desktop application.</p>
       </div>
       <div class="feature-grid">
-        <article class="feature-card"><div class="feature-icon">▤</div><h3>Notes</h3><p>Capture thoughts, organise ideas and keep important information together.</p></article>
-        <article class="feature-card"><div class="feature-icon">▦</div><h3>Calendar</h3><p>Manage events and deadlines, with Google Calendar integration.</p></article>
-        <article class="feature-card"><div class="feature-icon">✧</div><h3>AI Helper</h3><p>An assistant designed to support your productivity workflow.</p></article>
-        <article class="feature-card"><div class="feature-icon">◷</div><h3>Activity</h3><p>Understand your desktop activity and build awareness of your workflow.</p></article>
-        <article class="feature-card"><div class="feature-icon">⌂</div><h3>Custom Dashboard</h3><p>Bring useful widgets together in a workspace you can customise.</p></article>
-        <article class="feature-card"><div class="feature-icon">⚙</div><h3>Your Settings</h3><p>Personalise your SoftFlow experience and manage your preferences.</p></article>
+        <article class="feature-card"><div class="feature-icon"><img src="assets/app-icons/Notes.png" alt=""></div><h3>Notes</h3><p>Capture thoughts, organise ideas and keep important information together.</p></article>
+        <article class="feature-card"><div class="feature-icon"><img src="assets/app-icons/Calendar.png" alt=""></div><h3>Calendar</h3><p>Manage events and deadlines, with Google Calendar integration.</p></article>
+        <article class="feature-card"><div class="feature-icon"><img src="assets/app-icons/robot.png" alt=""></div><h3>AI Helper</h3><p>An assistant designed to support your productivity workflow.</p></article>
+        <article class="feature-card"><div class="feature-icon"><img src="assets/app-icons/activity.png" alt=""></div><h3>Activity</h3><p>Understand your desktop activity and build awareness of your workflow.</p></article>
+        <article class="feature-card"><div class="feature-icon"><img src="assets/app-icons/home.png" alt=""></div><h3>Custom Dashboard</h3><p>Bring useful widgets together in a workspace you can customise.</p></article>
+        <article class="feature-card"><div class="feature-icon"><img src="assets/app-icons/settings.png" alt=""></div><h3>Your Settings</h3><p>Personalise your SoftFlow experience and manage your preferences.</p></article>
       </div>
     </section>
 
@@ -129,6 +129,42 @@
             Download for Windows
           </a>
         </article>
+        <article class="download-panel extension-panel">
+          <div class="extension-heading">
+            <div class="download-icon">
+              <img src="assets/app-icons/robot.png" alt="SoftFlow extension icon">
+            </div>
+            <div class="download-info">
+              <span class="download-platform">CHROME · BROWSER EXTENSION</span>
+              <h3>SoftFlow Browser Extension</h3>
+              <p>Access your SoftFlow notes and calendar directly from your browser.</p>
+              <span class="download-version">Version 0.1.0</span>
+            </div>
+          </div>
+
+          <div class="extension-instructions">
+            <span class="extension-notice">MANUAL INSTALLATION REQUIRED</span>
+            <h4>How to install</h4>
+            <ol>
+              <li>Download the extension ZIP file below.</li>
+              <li>Extract the ZIP file to a folder on your computer.</li>
+              <li>Open <strong>chrome://extensions</strong> in Google Chrome.</li>
+              <li>Turn on <strong>Developer mode</strong>.</li>
+              <li>Select <strong>Load unpacked</strong>.</li>
+              <li>Select the extracted <strong>dist</strong> folder containing manifest.json.</li>
+            </ol>
+            <p class="extension-note">
+              Some desktop-connected features require the SoftFlow desktop app
+              and its native messaging bridge to be installed and configured.
+            </p>
+          </div>
+
+          <a class="button primary extension-download"
+             href="assets/SoftFlow-Browser-Extension-0.1.0.zip"
+             download>
+            Download Browser Extension
+          </a>
+        </article>
       </div>
 
       <p class="section-note">
@@ -138,62 +174,165 @@
 
     <section class="premium-section" id="premium">
       <div class="section-heading">
-        <span class="eyebrow">UNLOCK MORE</span>
-        <h2>Make more with SoftFlow Premium</h2>
-        <p>Unlock more features and manage your Premium access inside SoftFlow.</p>
+        <span class="eyebrow">SOFTFLOW PREMIUM</span>
+        <h2>More room to find your flow.</h2>
+        <p>Get more from your workspace with expanded features and permanent Premium access.</p>
       </div>
 
       <div class="premium-grid">
-        <article class="premium-card premium-featured">
-          <span class="premium-label">ONLINE PURCHASE</span>
-          <h3>Buy Premium</h3>
-          <p>Purchase SoftFlow Premium directly through our website using a secure checkout.</p>
+        <article class="premium-card">
+          <span class="premium-label">SOFTFLOW FREE</span>
+          <h3>Start with the essentials</h3>
           <ul>
-            <li>Secure online payment</li>
-            <li>Premium activation after purchase</li>
-            <li>Manage your Premium access</li>
+            <li>10 AI requests per day</li>
+            <li>Up to 5 tags</li>
+            <li>View calendar events</li>
+            <li>Core themes and features</li>
           </ul>
-          <button class="button primary" id="premium-purchase">Buy Premium</button>
-      <div class="premium-unavailable" id="premium-unavailable"
-           role="alert" aria-live="polite" hidden>
-        <div class="unavailable-icon">!</div>
-        <div>
-          <h3>Service unavailable</h3>
-          <p>Sorry, SoftFlow Premium purchases are currently unavailable in your region.</p>
-          <small>Please try again later.</small>
-        </div>
-      </div>
-
-          <p class="card-note">Online checkout is planned. Payment processing is not active yet.</p>
         </article>
 
+        <article class="premium-card premium-featured">
+          <span class="premium-label">SOFTFLOW PREMIUM</span>
+          <h3>Unlock more possibilities</h3>
+          <ul>
+            <li>100 AI requests per day</li>
+            <li>Unlimited tags</li>
+            <li>Calendar synchronisation</li>
+            <li>Create, edit and delete calendar events</li>
+            <li>Exclusive themes when available</li>
+            <li>Selected early access features</li>
+            <li>Permanent Premium access</li>
+          </ul>
+          <button class="button primary" id="premium-purchase">Get Premium</button>
+          <p class="card-note">One-time purchase · Permanent access</p>
+        </article>
       </div>
 
-
-      </div>
+      <article class="premium-support">
+        <div>
+          <span class="premium-label">BE PART OF THE JOURNEY</span>
+          <h3>Help SoftFlow reach more people.</h3>
+          <p>Enjoying SoftFlow? Share it with others, or send us feedback and ideas. Every bit of support helps the project grow.</p>
+        </div>
+        <div class="support-actions">
+          <a class="button secondary" href="contact.html">Send Feedback</a>
+          <button class="button primary" id="share-softflow">Spread the Word</button>
+          <span id="share-status" role="status" aria-live="polite"></span>
+        </div>
+      </article>
     </section>
 
   </main>
 
-  <footer>
+
+  <div class="checkout-overlay" id="checkout-overlay" hidden>
+    <section class="checkout-window" role="dialog" aria-modal="true" aria-labelledby="checkout-title">
+      <button class="checkout-close" id="checkout-close" aria-label="Close checkout">&times;</button>
+      <span class="premium-label">SOFTFLOW PREMIUM</span>
+      <h2 id="checkout-title">SoftFlow Premium</h2>
+      <p class="checkout-description">Your productivity workspace, unlocked.</p>
+
+      <div class="checkout-summary">
+        <div>
+          <strong>SoftFlow Premium</strong>
+          <span>One-time purchase</span>
+        </div>
+        <strong>Permanent access</strong>
+      </div>
+
+      <p class="checkout-description">Complete your Premium purchase to unlock permanent access to SoftFlow Premium.</p>
+
+      <button class="button primary checkout-continue" id="checkout-continue">
+        Continue to checkout
+      </button>
+
+      <div class="region-message" id="region-message" hidden>
+        <div class="region-message-icon">!</div>
+        <div>
+          <h3>Sorry, not available yet</h3>
+          <p>SoftFlow Premium checkout isn't available in your region yet. We're working to make it available more widely.</p>
+          <button class="button secondary" id="region-dismiss">Got it</button>
+        </div>
+      </div>
+    </section>
+  </div>
+\n  <footer>
     <a class="brand" href="index.html"><img src="assets/logo.png" alt=""><span>SoftFlow</span></a>
     <div><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms of Service</a><a href="mailto:softcloud079@gmail.com">Support</a></div>
     <p>© 2026 SoftFlow. All rights reserved.</p>
   </footer>
 
+
+
+
 <script>
 document.addEventListener("DOMContentLoaded", function () {
-  const button = document.getElementById("premium-purchase");
-  const message = document.getElementById("premium-unavailable");
+  const overlay = document.getElementById("checkout-overlay");
+  const purchase = document.getElementById("premium-purchase");
+  const close = document.getElementById("checkout-close");
+  const continueButton = document.getElementById("checkout-continue");
+  const regionMessage = document.getElementById("region-message");
+  const dismiss = document.getElementById("region-dismiss");
+  const shareButton = document.getElementById("share-softflow");
 
-  if (button && message) {
-    button.addEventListener("click", function () {
-      message.hidden = false;
-      message.scrollIntoView({ behavior: "smooth", block: "nearest" });
-    });
+  function closeCheckout() {
+    overlay.hidden = true;
+    regionMessage.hidden = true;
+    continueButton.hidden = false;
   }
+
+  purchase?.addEventListener("click", function () {
+    overlay.hidden = false;
+  });
+
+  close?.addEventListener("click", closeCheckout);
+
+  continueButton?.addEventListener("click", function () {
+    regionMessage.hidden = false;
+    continueButton.hidden = true;
+  });
+
+  dismiss?.addEventListener("click", closeCheckout);
+
+  overlay?.addEventListener("click", function (event) {
+    if (event.target === overlay) closeCheckout();
+  });
+
+  document.addEventListener("keydown", function (event) {
+    if (event.key === "Escape" && !overlay.hidden) closeCheckout();
+  });
+
+  shareButton?.addEventListener("click", async function () {
+    const url = window.location.href.split("#")[0];
+    const status = document.getElementById("share-status");
+
+    try {
+      await navigator.clipboard.writeText(url);
+      if (status) status.textContent = "Website link copied!";
+    } catch (error) {
+      const field = document.createElement("textarea");
+      field.value = url;
+      field.setAttribute("readonly", "");
+      field.style.position = "fixed";
+      field.style.opacity = "0";
+      document.body.appendChild(field);
+      field.select();
+
+      try {
+        const copied = document.execCommand("copy");
+        if (status) {
+          status.textContent = copied
+            ? "Website link copied!"
+            : "Copy this link: " + url;
+        }
+      } catch {
+        if (status) status.textContent = "Copy this link: " + url;
+      }
+
+      field.remove();
+    }
+  });
 });
 </script>
-
-</body>
+\n</body>
 </html>
